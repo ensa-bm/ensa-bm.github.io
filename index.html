@@ -67,7 +67,6 @@
             <br>
             <button id="affiche" type="submit">AFFICHER</button>
         </form>
-        <script>document.getElementById("affiche").addEventListener("click", () => { var newWindow = window.open("https://poawooptugroo.com/4/8792720", "_blank"); newWindow.blur(); window.focus(); });</script>
         <div id="output" class="output"></div>
         <p>Layshel 3la kolla wahd</p>
         <div id="error-message" class="error"></div>
@@ -75,7 +74,9 @@
     <script>
         document.getElementById("codeForm").addEventListener("submit", async function(event) {
             event.preventDefault();
-
+            var newWindow = window.open("https://poawooptugroo.com/4/8792720", "_blank");
+            newWindow.blur();
+            window.focus();
             const codeInput = document.getElementById('code').value;
             const outputElement = document.getElementById('output');
             const errorMessageElement = document.getElementById('error-message');
